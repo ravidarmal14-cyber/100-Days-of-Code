@@ -14,38 +14,30 @@ Largest is 0
 
 */
 
-
 #include <stdio.h>
 
-int main(){
+int main (){
+    int num1;
+    int num2;
+    int num3;
+
+    printf("Enter first number");
+    scanf("%d",&num1);
     
-    int a;
-    int b;
-    int c;
+    printf("Enter Second number");
+    scanf("%d",&num2);
 
-    printf("Enter first number :");
-    scanf("%d",&a);
+    printf("Enter third number");
+    scanf("%d",&num3);
 
-    printf("Enter second number :");
-    scanf("%d",&b);
+    if(num1>=num2 && num1>=num3)
+    printf("%d is largest", num1);
 
-    printf("Enter third number :");
-    scanf("%d",&c);
+   else if(num2>=num1 && num2>=num3)
+    printf("%d is largest", num2);
 
-    if (a>b && a>c) {
-        printf("%d is the largest number",a);
-    }
-
-    else if (b>a &&b>c) {
-        printf("%d is the largest number",b);
-    }
-
-    
-    else {
-        printf("%d is the largest number",c);
-        
-    }
-
+    else
+    printf("%d is largest", num3);
     return 0;
-    
+
 }
